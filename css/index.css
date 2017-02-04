@@ -1,0 +1,31 @@
+ul{  
+    list-style-type: none;
+    margin: 0;
+    padding-left: 10;
+    overflow: hidden;
+    background-color:blanchedalmond;
+}
+
+li {
+    float: right;
+    padding-inline-end: 20px 30px;
+}
+.list{
+ float: left;
+ padding-inline-end: 20px 30px;   
+}
+.name{
+text-align: center;
+
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    
+}
+
+li a:hover {
+    background-color:whitesmoke;
+}

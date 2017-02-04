@@ -1,0 +1,79 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="" lang="">
+<!--<![endif]-->
+
+<head>
+  <title>Your_Choice</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/Home.css">
+</head>
+
+<body style="background-image:url(Background.jpg)">
+  <ul>
+    <li class="list"><a href="Your_Choice.html">Car Rental Services</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+    <li><a href="Your_Choice.html">Car Rent Calculator</a></li>
+    <li><a href="Home.html">Home</a></li>
+  </ul>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4" id="F1">
+        <br />
+        <br />
+        <br />
+        <p><b>Do you want to rent a car:</b></p><br />
+        <form action="">
+          <input type="radio" name="gender" value="Y">Yes<br />
+          <input type="radio" name="gender" value="N" checked="checked">No<br />
+        </form>
+      </div>
+      <div class="col-md-4" id="S2">
+        <h3>
+          <u>Car Rentel Calculator</u>
+        </h3>
+        <form id="Calculate" method="POST">
+          Enter the name of the car that you want to rent:<br /> <input type="text" name="CarName" id="name" value="Benz"><br>          Enter the color of car:<br /> <input type="text" name="Color" id="color" value="Yellow"><br> Enter the number of
+          Days that you want to rent car<br /> <input type="number" name="Days" id="days" value="1"><br> Enter your SSN Number:<br
+          /> <input type="number" name="SSN" id="ssn" value=""><br> Enter you drivers license ID:<br />
+          <input type="text" name="License" id="license" value=""><br> Enter your origin Country:<br />
+          <input type="text"name="Country" id="country" value="USA"><br> 
+          Enter your origin state:<br /> <input type="text" name="State" id="state" value="Missouri"><br> Enter your
+            origin Town/City:<br /><input type="text" name="TC" id="tc" value="Maryville"><br>
+            <br />
+            <button onclick="claculateRent()" type="button">Calculate Rent</button>
+        </form>
+
+      </div>
+      <div class="col-md-4" id="T3">
+        <h3>
+          <u>Order Acknowledgement</u>
+        </h3>
+        <p><b>Name of the car :</b><span id="name1"></span></p>
+        <p><b>Color of the car :</b><span id="color1"></span></p>
+        <p><b>Number of Days you choose to rent car :</b><span id="days1"></span></p>
+        <p><b>Your SSN Number is :</b><span id="ssn1"></span></p>
+        <p><b>You drivers license ID is :</b><span id="license1"></span></p>
+        <p><b>Your origin Country is :</b><span id="country1"></span></p>
+        <p><b>Your origin state :</b><span id="state1"></span></p>
+        <p><b>Your city or town :</b><span id="tc1"></span></p>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="Calculate.js"></script>
+</body>
+
+</html>
